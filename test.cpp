@@ -1,4 +1,4 @@
-#include "spreadsheet.cpp"
+#include "spreadsheet.hpp"
 #include "gtest/gtest.h"
 #include <iostream>
 #include "testing.hpp"
