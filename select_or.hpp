@@ -21,6 +21,11 @@ class Select_Or : public Select {
                         select1 = s1;
                         select2 = s2;
                 }
+		~Select_Or()
+		{
+			delete select1;
+			delete select2;
+		}
 
 
 

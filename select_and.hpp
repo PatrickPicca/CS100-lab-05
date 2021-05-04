@@ -21,7 +21,11 @@ class Select_And : public Select {
 			select1 = s1;
 			select2 = s2;
 		}
-
+		~Select_And()
+		{
+			delete select1;
+			delete select2;
+		}
 			
 	
 		virtual bool select(const Spreadsheet* sheet, int row) const {
