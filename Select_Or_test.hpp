@@ -2,7 +2,7 @@
 #define __SELECT_AND_TEST_HPP__
 
 #include "gtest/gtest.h"
-
+#include "spreadsheet.hpp"
 #include "Select_Contains.hpp"
 #include "select_or.hpp"
 
