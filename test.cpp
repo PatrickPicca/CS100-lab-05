@@ -4,7 +4,6 @@
 #include "testing.hpp"
 #include "select.hpp"
 
-#include <iostream>
 
 #include "Select_Contains_test.hpp"
 #include "Select_Not_test.hpp"
