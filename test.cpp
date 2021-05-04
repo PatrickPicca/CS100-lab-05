@@ -4,7 +4,7 @@
 #include "testing.hpp"
 #include "select.hpp"
 #include <iostream>
-
+#include "Select_Contains_test.hpp"
 
 int main(int argc, char **argv) {
   ::testing::InitGoogleTest(&argc, argv);
