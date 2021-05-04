@@ -13,7 +13,7 @@ TEST(SelectContaintsTest, basicContainsTest) {
 	testsheet.add_row({"Bob", "Jones", "30", "business"});
 	testsheet.add_row({"Ron", "Otterman", "40", "News"});
 
-	sheet.set_selection(new Select_Contains(&sheet, "Last", "Jones"));
+	testsheet.set_selection(new Select_Contains(&testsheet, "Last", "Jones"));
 
 	std::stringstream out;
 	testsheet.print_selection(out);
@@ -28,7 +28,7 @@ TEST(SelectContaintsTest, ContainsTwoRows) {
 	testsheet.add_row({"Ron", "Otterman", "40", "News"});
 	testsheet.add_row({"Jerry", "Jones", "45", "Soccer"});
 
-	sheet.set_selection(new Select_Contains(&sheet, "Last", "Jones"));
+	testsheet.set_selection(new Select_Contains(&testsheet, "Last", "Jones"));
 
 	std::stringstream out;
 	testsheet.print_selection(out);
@@ -42,10 +42,11 @@ TEST(SelectContaintsTest, ContainsZero) {
 	testsheet.add_row({"Bob", "Jones", "30", "business"});
 	testsheet.add_row({"Ron", "Otterman", "40", "News"});
 
-	sheet.set_selection(new Select_Contains(&sheet, "First", "Robert"));
+	testsheet.set_selection(new Select_Contains(&testsheet, "First", "Robert"));
  
 	std::stringstream out;
 	testsheet.print_selection(out);
 	EXPECT_EQ(out.str(), "\n");
 }
 
+#endif
