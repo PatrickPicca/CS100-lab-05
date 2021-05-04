@@ -46,7 +46,7 @@ TEST(SelectContaintsTest, ContainsZero) {
  
 	std::stringstream out;
 	testsheet.print_selection(out);
-	EXPECT_EQ(out.str(), "\n");
+	EXPECT_EQ(out.str(), "");
 }
 
 #endif
