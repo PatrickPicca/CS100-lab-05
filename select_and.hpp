@@ -25,7 +25,7 @@ class Select_And : public Select {
 			
 	
 		virtual bool select(const Spreadsheet* sheet, int row) const {
-			return select->s1(row, column) && select1->s2(sheet, row);
+			return select->s1(sheet, row) && select1->s2(sheet, row);
 	}	
 
 		//return select(sheet->cell_data(row, column));
