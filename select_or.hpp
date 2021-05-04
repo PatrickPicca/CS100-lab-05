@@ -32,7 +32,9 @@ class Select_Or : public Select {
 		//return select(sheet->cell_data(row, column)); 
                 
 };
-                
+               
+
+ 
                 
 #endif
 

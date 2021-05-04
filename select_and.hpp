@@ -30,7 +30,6 @@ class Select_And : public Select {
 
 		//return select(sheet->cell_data(row, column));
 
-
 };		
 
 
