@@ -12,20 +12,20 @@ class Select_Or : public Select {
 
         protected:
 
-                Select* select;
                 Select* select1;
+                Select* select2;
 
 
         public:
                 Select_Or(Select* s1, Select* s2){
-                        select = s1;
-                        select1 = s2;
+                        select1 = s1;
+                        select2 = s2;
                 }
 
 
 
                 virtual bool select(const Spreadsheet* sheet, int row) const {
-                        return select->s1(sheet, row) || select1->s2(sheet, row);
+                        return select1->select(sheet, row) || select2->select(sheet, row);
         }
 
                 
