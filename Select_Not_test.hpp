@@ -2,7 +2,7 @@
 #define __SELECT_NOT_TEST_HPP__
 
 #include "gtest/gtest.h"
-
+#include "spreadsheet.hpp"
 #include "Select_Contains.hpp"
 #include "Select_Not.hpp"
 
